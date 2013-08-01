@@ -2,11 +2,13 @@ Simple::Application.routes.draw do
   get "lurc/home"
   get "lurc/contact"
   get "lurc/about"
+  get "lurc/our_goals"
+  get "lurc/members"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'lurc#about'
+  root 'lurc#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

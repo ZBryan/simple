@@ -11,23 +11,42 @@
 	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
 
 	<!-- Set the viewport width to device width for mobile -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
 	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
 
-	<%= stylesheet_link_tag    "application" %>
+	<%= stylesheet_link_tag    "application", media: "all" %>
+
+	<%= javascript_include_tag :modernizr %>
 	<%= javascript_include_tag "vendor/custom.modernizr" %>
 	<%= csrf_meta_tags %>
-	 <link rel="stylesheet" href="application.css" />
+
+	<link rel="stylesheet" href="application.css" />
+	<div class="container">
+		<div class="row">
+			<div class="three columns">
+				<%= image_tag "logo.jpeg" %>
+				
+			</div>
+			<div class="nine columns">
+			</div>
+		</div>
+	</div>
 </head>
 
 <body>
-<div class="preloader"></div>
+	<%= render "layouts/navbar" %>
+	<div class="container">
+		<div class="row">
+			<div class="three columns">
+				<%= render "lurc/sidebar" %>
+				<div class="nine columns">
+					<%= yield %>
 
-	<%= yield %>
-		<nav class="top-bar" data-options="is_hover:false">
-
-
-			<%= javascript_include_tag "application" %>
-		</body>
-		</html>
+					<%= javascript_include_tag "application" %>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
