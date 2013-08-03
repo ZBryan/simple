@@ -36,15 +36,15 @@ end
 
 gem 'thin'
 
-gem 'compass-rails' # you need this or you get an err
-gem 'zurb-foundation', '~> 4.0.0'
+# gem 'compass-rails' # you need this or you get an err
+# gem 'zurb-foundation', '~> 4.0.0'
 
 gem 'better_errors', group: :development
 gem "binding_of_caller", group: :development
 
 gem "modernizr-rails"
 gem "gumby-framework"
-gem "jqcloud-rails"
+# gem "jqcloud-rails"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
