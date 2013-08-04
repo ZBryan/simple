@@ -1,7 +1,8 @@
 Simple::Application.routes.draw do
-  get "lurc/home"
-  get "lurc/contact"
-  get "lurc/about"
+  devise_for :users
+  get "/home" => "lurc#home"
+  get "/contact" => "lurc#contact"
+  get "/about" => "lurc#about"
   get "lurc/our_goals"
   get "/members" => "lurc#members"
   # The priority is based upon order of creation: first created -> highest priority.

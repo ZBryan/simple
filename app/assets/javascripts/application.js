@@ -12,11 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require foundation
-//= require foundation/foundation.orbit.js
 //= require turbolinks
 //= require gumby
-//= require jqcloud
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
