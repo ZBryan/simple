@@ -35,7 +35,6 @@ group :doc do
 end
 
 gem 'thin'
-gem 'devise'
 
 # gem 'compass-rails' # you need this or you get an err
 # gem 'zurb-foundation', '~> 4.0.0'
@@ -48,13 +47,14 @@ gem "gumby-framework"
 # gem "jqcloud-rails"
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'rspec-rails'
 
 # Use unicorn as the app server
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano', group: :development
+gem 'capistrano', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]

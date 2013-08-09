@@ -1,5 +1,4 @@
 Simple::Application.routes.draw do
-  devise_for :users
   get "/home" => "lurc#home"
   get "/contact" => "lurc#contact"
   get "/about" => "lurc#about"
