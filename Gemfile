@@ -55,6 +55,9 @@ gem 'rspec-rails'
 
 # Use Capistrano for deployment
 gem 'capistrano', group: :development
+gem 'figaro'
+gem 'omniauth-twitter'
+gem 'omniauth-github'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
