@@ -9,4 +9,26 @@
 <p>We also hope to reduce the fear that comes with new development by demystifying how the process of development works. For this, we will use our website for gathering together useful resources, defining some of the terminology you’ll hear in a CA LURC meeting, and provide a ‘nuts & bolts’ explanation on the processes associated with develpment. </p>
 
 <p>But most of all, this is where you’ll find out about any upcoming projects that the CA LURC plans to review - so don’t forget to check out the tab titled Reviews Map!</p>
+
+<footer>
+	<div class="wrapper">
+		<div class="push"></div>
+		<div class="row">
+			<div class="twelve columns"
+			<div id="user_nav">
+				<% if current_user %>
+				Signed in as <%= current_user.name %>
+				<%= link_to "Sign out", signout_path %>
+				<% else %>
+				Sign in with: &nbsp
+				<%= link_to "Twitter", "/auth/twitter" %>
+				&nbsp | &nbsp
+				<%= link_to "Github", "/auth/github" %>
+				<% end %>
+			</div>
+			
+		</div>
+	</div>
+</footer>
+
 </html>

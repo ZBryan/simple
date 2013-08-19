@@ -2,8 +2,10 @@ Simple::Application.routes.draw do
   get "/home" => "lurc#home"
   get "/contact" => "lurc#contact"
   get "/about" => "lurc#about"
-  get "lurc/our_goals"
+  get "/our_goals" => "lurc#our_goals"
   get "/members" => "lurc#members"
+  get "/review_map" => "lurc#review_map"
+  get "/resources" => "lurc#resources"
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
