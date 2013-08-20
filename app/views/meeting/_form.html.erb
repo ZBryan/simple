@@ -1,0 +1,6 @@
+<h2>Next Meeting</h2>
+<ul>
+<% @meeting.each do |meeting| %>
+<li><%= link_to meeting.name, meeting %></li>
+<% end %>
+</ul>
