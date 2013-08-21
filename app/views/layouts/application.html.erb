@@ -18,10 +18,9 @@
 	<%= stylesheet_link_tag    "application", media: "all" %>
 
 	<%= javascript_include_tag :modernizr %>
-	<%= javascript_include_tag "vendor/custom.modernizr" %>
 	<%= csrf_meta_tags %>
-	<%= stylesheet_link_tag  "craftyslide" %>
-	<%= javascript_include_tag "vendor/craftyslide" %>
+	<%= javascript_include_tag "application" %>
+	
 
 	<!--<link rel="stylesheet" href="application.css" />-->
 
@@ -53,7 +52,7 @@
 					<%= yield %>
 					
 
-					<%= javascript_include_tag "application" %>
+
 				</div>
 			</div>
 		</div>

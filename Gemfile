@@ -58,6 +58,8 @@ gem 'capistrano', group: :development
 gem 'figaro'
 gem 'omniauth-twitter'
 gem 'omniauth-github'
+gem 'newrelic_rpm'
+gem 'modernizr-rails'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
