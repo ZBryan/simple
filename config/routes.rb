@@ -9,6 +9,7 @@ Simple::Application.routes.draw do
   get "/bylaws" => "lurc#bylaws"
   get "/calendar" => "lurc#calendar"
   get "/ground_rules" => "lurc#ground_rules"
+  
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
